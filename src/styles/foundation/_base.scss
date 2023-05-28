@@ -26,15 +26,6 @@ img {
   vertical-align: middle;
 }
 
-// lazyload対応
-img.lazy {
-  transition: opacity 2s;
-  opacity: 0;
-  &.lazyloaded {
-    opacity: 1;
-  }
-}
-
 a {
   text-decoration: none;
   transition: opacity 0.4s;

@@ -1,0 +1,11 @@
+@use "../mixins" as mixins;
+
+// 以下、lazysizesのデフォルトの設定（フェードイン）
+// img.js-lazyload {
+//   transition: opacity 1s;
+//   opacity: 0;
+
+//   &.lazyloaded {
+//     opacity: 1;
+//   }
+// }
