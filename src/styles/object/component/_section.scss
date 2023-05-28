@@ -1,0 +1,23 @@
+@use "../../mixins" as mixins;
+
+.c-section {
+  padding: 60px 0;
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+
+    @include mixins.breakpoint(tablet) {
+      font-size: 6rem;
+      margin-bottom: 2.5rem;
+    }
+
+    & + p {
+      margin-bottom: 3rem;
+      @include mixins.breakpoint(tablet) {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
