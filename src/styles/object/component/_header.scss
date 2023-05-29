@@ -24,13 +24,17 @@
     transform: scaleX(0);
   }
 
-  .icon-github {
+  & .icon-github {
     position: absolute;
     bottom: 0px;
     left: -3px;
     margin-left: -20px;
     height: 19px;
     width: 19px;
+  }
+
+  & span {
+    font-weight: bold;
   }
 
   @include mixins.hover() {

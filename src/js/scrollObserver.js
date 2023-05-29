@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       el.classList.remove("is-visible");
     }
   };
-  const so = new ScrollObserver(".js-scroll-trigger", cb, { once: false });
+  const so = new ScrollObserver(".js-scroll-trigger", cb);
 });
 
 class ScrollObserver {
