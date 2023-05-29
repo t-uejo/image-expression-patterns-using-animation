@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cb = function (el, isIntersecting) {
     if (isIntersecting) {
-      setTimeout(() => {
-        el.classList.add("is-visible");
-      }, 500);
+      el.classList.add("is-visible");
     } else {
-      // el.classList.remove("is-visible");
+      el.classList.remove("is-visible");
     }
   };
   const so = new ScrollObserver(".js-scroll-trigger", cb);
