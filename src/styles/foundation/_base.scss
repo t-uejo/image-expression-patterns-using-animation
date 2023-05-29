@@ -28,12 +28,12 @@ img {
 
 a {
   text-decoration: none;
-  transition: opacity 0.4s;
+  // transition: opacity 0.4s;
   cursor: pointer;
   color: var.$mainColor;
 
-  @include mixins.hover() {
-    text-decoration: none;
-    opacity: 0.7;
-  }
+  // @include mixins.hover() {
+  //   text-decoration: none;
+  //   opacity: 0.7;
+  // }
 }

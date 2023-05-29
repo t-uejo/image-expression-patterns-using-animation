@@ -1,0 +1,40 @@
+@use "../../mixins";
+
+#header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.view-on-github {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -5%;
+    right: 0;
+    background-color: #fff;
+    transition: all 0.25s ease-in-out 0s;
+    transform: scaleX(0);
+  }
+
+  .icon-github {
+    position: absolute;
+    bottom: 1px;
+    left: -5px;
+    margin-left: -20px;
+    height: 19px;
+    width: 19px;
+  }
+
+  @include mixins.hover() {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+}
