@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       scrollTrigger: {
         trigger: body,
         start: "top top",
-        endTrigger: el,
-        end: "bottom top",
+        // endTrigger: el,
+        end: "bottom bottm",
         scrub: true,
       },
     });
