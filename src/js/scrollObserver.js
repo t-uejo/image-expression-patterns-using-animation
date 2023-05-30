@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", () => {
   const cb = function (el, isIntersecting) {
     if (isIntersecting) {
       el.classList.add("is-visible");
