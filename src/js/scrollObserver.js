@@ -23,6 +23,7 @@ class ScrollObserver {
     this.once = this.options.once;
     this._init();
   }
+
   _init() {
     const callback = function (entries, observer) {
       entries.forEach((entry) => {

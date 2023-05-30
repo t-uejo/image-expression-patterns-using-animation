@@ -8,4 +8,5 @@ import "lazysizes";
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
 import "./scrollObserver.js";
 import "./loading.js";
-import "./gsapScrub.js";
+import "./gsap/gsapScrub.js";
+import "./gsap/gsapScrollTextEffect.js";
