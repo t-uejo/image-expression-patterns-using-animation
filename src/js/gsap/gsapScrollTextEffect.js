@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   gsap.set(".js-text-split .char", {
-    opacity: 0.2,
-    scale: 0.5,
+    opacity: 0.3,
+    scale: 0.7,
   });
 
   els.forEach((el) => {

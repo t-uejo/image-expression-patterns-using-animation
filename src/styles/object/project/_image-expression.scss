@@ -40,4 +40,10 @@
       }
     }
   }
+
+  .js-type {
+    & span {
+      display: inline-block;
+    }
+  }
 }
