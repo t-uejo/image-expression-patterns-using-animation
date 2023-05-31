@@ -2,9 +2,9 @@
 
 .p-image-expression {
   figure {
-    max-width: 600px;
+    // max-width: 600px;
     margin: 0 auto;
-    margin-bottom: 50vh;
+    margin-bottom: 50px;
     transition: 2s cubic-bezier(0.16, 1, 0.3, 1);
 
     &:last-child {
@@ -44,6 +44,18 @@
   .js-type {
     & span {
       display: inline-block;
+    }
+  }
+
+  .text-container {
+    margin-bottom: 100px;
+
+    & p {
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }
