@@ -1,7 +1,10 @@
 window.addEventListener("load", () => {
   const cb = function (el, isIntersecting) {
+    const child = el.firstElementChild;
     if (isIntersecting) {
-      el.classList.add("is-visible");
+      if (child.classList.contains("lazyloaded")) {
+        el.classList.add("is-visible");
+      }
     } else {
       el.classList.remove("is-visible");
     }
