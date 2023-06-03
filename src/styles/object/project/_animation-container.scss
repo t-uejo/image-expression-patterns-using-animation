@@ -1,8 +1,7 @@
 @use "../../mixins" as mixins;
 
-.p-image-expression {
+.p-animation-container {
   figure {
-    // max-width: 600px;
     margin: 0 auto;
     margin-bottom: 50px;
     transition: 2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -41,12 +40,8 @@
     }
   }
 
-  .js-type {
-    & span {
-      display: inline-block;
-    }
-  }
-
+  //あくまでこのセクション特有の記述のためcomponent、javascriptには移行しない。
+  //今後component化を検討する。
   .text-container {
     margin-bottom: 100px;
 
