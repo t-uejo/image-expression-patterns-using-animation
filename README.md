@@ -1,2 +1,2 @@
-# image-expression-patterns-using-animation
-https://image-expression-uejo.netlify.app/
+# practice-animation
+https://practice-animation-uejo.netlify.app
