@@ -2,6 +2,7 @@ window.addEventListener("load", () => {
   const cb = function (el, isIntersecting) {
     const child = el.firstElementChild;
     if (isIntersecting) {
+      //TODO：lazyloadをつけない場合があるので対応できるようにする
       if (child.classList.contains("lazyloaded")) {
         el.classList.add("is-visible");
       }
@@ -9,6 +10,7 @@ window.addEventListener("load", () => {
       el.classList.remove("is-visible");
     }
   };
+  //TODO：複数のパターンでコールバック関数を渡した時に対応させる
   const so = new ScrollObserver(".js-scroll-trigger", cb, { once: false });
 });
 
