@@ -1,13 +1,16 @@
 window.addEventListener("load", () => {
   const cb = function (el, isIntersecting) {
     const child = el.firstElementChild;
-    if (!isIntersecting) el.classList.remove("is-visible");
-    //js-lazyloadを持たない場合は遅延表示させない
-    if (!child.classList.contains("js-lazyload")) {
-      el.classList.add("is-visible");
-    }
-    if (child.classList.contains("lazyloaded")) {
-      el.classList.add("is-visible");
+    if (isIntersecting) {
+      //js-lazyloadを持たない場合は遅延表示させない
+      if (!child.classList.contains("js-lazyload")) {
+        el.classList.add("is-visible");
+      }
+      if (child.classList.contains("lazyloaded")) {
+        el.classList.add("is-visible");
+      }
+    } else {
+      el.classList.remove("is-visible");
     }
   };
   //TODO：複数のパターンでコールバック関数を渡した時に対応させる
