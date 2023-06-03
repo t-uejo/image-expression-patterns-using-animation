@@ -12,14 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
       curr = curr.replace(" ", "&nbsp");
       return accu + `<span class="char">${curr}</span>`;
     }, "");
-  });
 
-  gsap.set(".js-text-split .char", {
-    opacity: 0.3,
-    scale: 0.7,
-  });
+    gsap.set(".js-text-split .char", {
+      opacity: 0.3,
+      scale: 0.7,
+    });
 
-  els.forEach((el) => {
     gsap.to(el.children, {
       scrollTrigger: {
         trigger: el,
