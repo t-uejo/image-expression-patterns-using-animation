@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
         scrub: true,
       },
     });
-    tl.to(el, { y: -80, ease: "none", duration: 1.5 });
+    tl.to(el, { y: -100, ease: "none", duration: 2 });
   });
 });
